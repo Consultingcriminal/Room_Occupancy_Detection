@@ -1,4 +1,10 @@
 # Room_Occupancy_Detection
+  <img src="images/images.jpeg" width="500" height="350" title="Intro">
+  
+## Introduction
+
+Don't let packed up hotels be a detterent on your plans.This tool aims at predicting the availablity of rooms on sequenced data and lets you know the occupancy status of a hotel.
+
 This dataset describes climatic features of a room and the objective is to predict whether or not the room is occupied.
 There are 20,560 one-minute observations taken over the period of a few weeks,over which the model is to be trained and classified.This is a classification prediction problem on which 2 methods have been fit and compared-
 
@@ -81,8 +87,7 @@ There are 20,560 one-minute observations taken over the period of a few weeks,ov
   <img src="images/LSTM_Performance.png" title="LSTM_Performance">
   
   The model seems to generalise very well giving us almost accurate results,upon which future can easily be forecasted and room avalablity can be understood well in advance.
-  
-  Data Profiling_VAR-
+ 
   
  ## Performance(Considering Only LSTM Model)
  
