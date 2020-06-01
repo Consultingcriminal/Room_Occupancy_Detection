@@ -6,6 +6,37 @@ There are 20,560 one-minute observations taken over the period of a few weeks,ov
 
 2.Univariate Stacked LSTM(Deep Learning)
 
+# Similar Use Cases
+
+    1.Stock Market Analysis
+    
+    2.Economic Forecasting
+   
+    3.Inventory studies
+    
+    4.Budgetary Analysis 
+    
+    5.Census Analysis 
+    
+    6.Yield Projection 
+    
+    7.Sales Forecasting 
+    
+    etc.
+
+## Workflow
+
+1.) Create a classification model.(included in Classification_Engine)
+
+2.) Create TimeSeries Forecasting Models(included STM_Pred and VAR)
+
+3.) Model Tuning
+
+4.) Classifying the Forecasted Data and keep improving.
+
+5.) Forecast Future room occupancy requirement.(in progress)
+
+6.) Fitting better models.(in progress)
 
 ## Classification Model-
 
@@ -21,7 +52,7 @@ There are 20,560 one-minute observations taken over the period of a few weeks,ov
    
    Observation-Though the computation is pretty inexpensive.The model does not genralise too well,resulting in poor classification accuracy and a less relaible model
    
-#### Univarariate Stacked LSTM
+#### Univariate Stacked LSTM
   Individual Features were trained with a max. lag of 10 observations and stacked together for as final_forecast
   
   Model_Summary-4 LSTM Layers
@@ -51,5 +82,25 @@ There are 20,560 one-minute observations taken over the period of a few weeks,ov
   
   The model seems to generalise very well giving us almost accurate results,upon which future can easily be forecasted and room avalablity can be understood well in advance.
   
+  Data Profiling_VAR-
   
-  
+ ## Performance(Considering Only LSTM Model)
+ 
+ Classification accuracy on Forecasted Dataset wrt to Test Dataset-:
+ 
+ 1.The No. of correct classication of occupancy by the model is 583 of 588
+ 
+ 2.The No. of correct classication of inoccupancy by the model is 1035 of 1041 
+ 
+ ## Conclusion
+ 
+ The LSTM model albeit computationally expensive beats the statistical model hands down on a such a complex TimeSeries.
+ However,the simplicity and accuracy measure of statistical models on datasets composed of simpler trends and a defined     seasonablity cannot be ignored.
+
+## Acknowledgements-
+
+1. UCI Machine Learning Repository
+
+2. Analytics India
+
+3. Krish Naik
