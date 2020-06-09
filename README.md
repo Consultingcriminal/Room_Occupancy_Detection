@@ -1,11 +1,12 @@
-# Room_Occupancy_Detection
+# Room_Occupancy_Prediction
   <img src="images/images.jpeg" width="500" height="350" title="Intro">
   
 ## Introduction
 
-Don't let packed up hotels be a detterent on your plans.This tool aims at predicting the availablity of rooms on sequenced data and lets you know the occupancy status of a hotel.
+Don't let packed up hotels be a detterent on your plans.
 
-This dataset describes climatic features of a room and the objective is to predict whether or not the room is occupied.
+This model aims at predicting the availablity of rooms on sequenced data and lets you know the occupancy status of a hotel at a further date upon the climatic features of the location.
+
 There are 20,560 one-minute observations taken over the period of a few weeks,over which the model is to be trained and classified.This is a classification prediction problem on which 2 methods have been fit and compared-
 
 1.Vector AutoRegression(Statistical Modelling)
@@ -34,7 +35,7 @@ There are 20,560 one-minute observations taken over the period of a few weeks,ov
 
 1.) Create a classification model.(included in Classification_Engine)
 
-2.) Create TimeSeries Forecasting Models(included STM_Pred and VAR)
+2.) Create TimeSeries Forecasting Models(included LSTM_Pred and VAR)
 
 3.) Model Tuning
 
